@@ -31,7 +31,7 @@ class RequestsController < ApplicationController
       flash[:success] = "Stitch created!"
 
      # Send to home (where the feed should be, for Admins)
-      redirect_to root_url
+      redirect_to request_path(@request.id)
     else
       render 'new'
     end

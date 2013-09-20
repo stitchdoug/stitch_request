@@ -1,5 +1,7 @@
 <div class="row">
   <div class="span10 offset1">
+    <h1>All Stitches</h1>
+    <br />
     <% @requests.each do |request| %>
         <div class="thumbnail stitch_thumbnail">
           <%= link_to "Stitch ##{request.stitch_id}", request_path(request.id) %>

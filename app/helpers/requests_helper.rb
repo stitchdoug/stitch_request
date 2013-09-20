@@ -7,7 +7,7 @@ module RequestsHelper
     if parsed["video"].nil?
       parsed["video"] = {}
       parsed["video"]["h264"] = {}
-      parsed["video"]["h264"]["status"] = "pending"
+      parsed["video"]["h264"]["status"] = "processing"
     end
 
     parsed
