@@ -1,0 +1,40 @@
+<div class="row">
+<div class="span8 offset4">
+  <h1>"<%= @stitch['name'] %>"</h1>
+</div>
+</div>
+
+<div class="row">
+<aside class="span3">
+  <section>
+    <%= get_status(@stitch['rejected'], @stitch['video']['h264']['status']) %>
+  </section>
+  <section>
+    Requested by <strong><%= @stitch['user']['name'] %></strong><br />
+    <small><em>(<%= @stitch['user']['username'] %>)</em></small>
+  </section>
+</aside>
+<div class="span8 offset1">
+
+  <p class="lead"><%= @stitch['description'] %></p>
+
+  <div class="center hero-unit">
+    <% if @stitch['video']['h264']['status'] == "success" %>
+
+        <!-- HTML5 player -->
+        <video id="movie" width="<%= @stitch['video']['h264']['width'] %>" height="<%= @stitch['video']['h264']['height'] %>" preload="none"
+               poster="<%= @stitch['video']['h264']['screenshot'] %>" controls>
+          <source src="<%= @stitch['video']['h264']['url'] %>" type="video/mp4">
+        </video>
+
+    <% else %>
+        We are processing your request. Refresh in a short while to see your Stitch!
+    <% end %>
+  </div>
+
+  <!--<p>
+    <%= @stitch %>
+  </p>-->
+
+</div>
+</div>

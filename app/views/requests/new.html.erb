@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="span12">
+    <h1>Request Stitch</h1>
+    <p class="lead center"><i class="icon-pencil"></i> Create a new Stitch remotely.</p>
+  </div>
+
+  <div class="span6 offset3">
+
+    <%= form_for @request do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
+
+        <label for="stitch_name">Name</label>
+        <input id="stitch_name" type="text" name="stitch[name]" placeholder="Project name...">
+
+        <label for="stitch_description">Description</label>
+        <div class="field">
+          <textarea id="stitch_description" name="stitch[description]" rows="4" cols="25" placeholder="140 chars max"></textarea>
+        </div>
+
+        <label for="stitch_notes">Notes</label>
+        <div class="field">
+          <textarea id="stitch_notes" name="stitch[notes]" rows="4" cols="25" placeholder="For internal use"></textarea>
+        </div>
+
+        <%= f.submit "SEND", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
