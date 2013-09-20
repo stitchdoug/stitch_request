@@ -4,7 +4,7 @@
     <list default="true" id="af31447a-a5e2-4e90-82ba-28c0baa68830" name="Default" comment="" />
     <ignored path="stitch_request.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/requests_controller.rb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379659800265" ignored="false" />
+    <file path="/requests_controller.rb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379660493141" ignored="false" />
     <file path="/routes.rb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379627392425" ignored="false" />
     <file path="/application.html.erb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379626051292" ignored="false" />
     <file path="/_header.html.erb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379627422481" ignored="false" />
@@ -61,9 +61,9 @@
         <option value="$PROJECT_DIR$/app/views/requests/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/requests_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/requests/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
       </list>
     </option>
   </component>
@@ -107,7 +107,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -126,18 +125,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_request" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_request" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_request" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_request" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: stitch_request">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -435,7 +467,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19848976" sideWeight="0.6008065" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2605178" sideWeight="0.6008065" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26321468" sideWeight="0.6008065" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39919356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -548,16 +580,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="100" selection-end="100" vertical-scroll-proportion="0.03188098">
-          <folding />
-        </state>
+        <state line="2" column="24" selection-start="100" selection-end="100" vertical-scroll-proportion="0.03188098" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/requests/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="9" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.734252">
-          <folding />
-        </state>
+        <state line="36" column="9" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.734252" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
@@ -582,28 +610,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/requests/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="85" selection-end="85" vertical-scroll-proportion="0.082720585">
-          <folding />
-        </state>
+        <state line="3" column="10" selection-start="85" selection-end="85" vertical-scroll-proportion="0.082720585" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/requests_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.44894367">
+        <state line="17" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.44894367" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="104" selection-end="104" vertical-scroll-proportion="0.1056338">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="38" selection-start="572" selection-end="572" vertical-scroll-proportion="0.7130282">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="104" selection-end="104" vertical-scroll-proportion="0.1056338">
+        <state line="86" column="28" selection-start="1759" selection-end="1759" vertical-scroll-proportion="0.82883817">
           <folding />
         </state>
       </provider>
