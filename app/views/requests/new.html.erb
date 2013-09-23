@@ -1,7 +1,7 @@
 <div class="row">
   <div class="span12">
     <h1>Request Stitch</h1>
-    <p class="lead center"><i class="icon-pencil"></i> Create a new Stitch remotely.</p>
+    <p class="lead center"><i class="icon-pencil"></i> Ask and ye shall receive...</p>
   </div>
 
   <div class="span6 offset3">
@@ -10,11 +10,11 @@
         <%= render 'shared/error_messages', object: f.object %>
 
         <label for="stitch_name">Name</label>
-        <input id="stitch_name" type="text" name="stitch[name]" placeholder="Project name...">
+        <input id="stitch_name" type="text" name="stitch[name]" placeholder="Project name">
 
         <label for="stitch_description">Description</label>
         <div class="field">
-          <textarea id="stitch_description" name="stitch[description]" rows="4" cols="25" placeholder="140 chars max"></textarea>
+          <textarea id="stitch_description" name="stitch[description]" rows="4" cols="25" placeholder="Summary of the idea"></textarea>
         </div>
 
         <label for="stitch_notes">Notes</label>

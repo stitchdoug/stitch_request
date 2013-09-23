@@ -2,11 +2,12 @@ class RequestsController < ApplicationController
   require 'net/http'
 
   def index
-    @requests = Request.all
-    @stitches = Array.new
+    #@requests = Request.all
+    @requests = Request.order("created_at DESC")
+    @stitches = Hash.new
 
     @requests.each do |request|
-      @stitches << get_stitch(request.stitch_id)
+      @stitches["#{request.id}"] = get_stitch(request.stitch_id)
     end
   end
 

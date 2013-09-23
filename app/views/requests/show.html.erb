@@ -13,6 +13,11 @@
     Requested by <strong><%= @stitch['user']['name'] %></strong><br />
     <small><em>(<%= @stitch['user']['username'] %>)</em></small>
   </section>
+  <section>
+    <span class="timestamp">
+    Requested <%= time_ago_in_words(@request.created_at) %> ago.
+  </span>
+  </section>
 </aside>
 <div class="span8 offset1">
 

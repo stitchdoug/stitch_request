@@ -1,19 +1,13 @@
 <div class="row">
-  <div class="span10 offset1">
+  <div class="span12">
     <h1>All Stitches</h1>
     <br />
-    <% @requests.each do |request| %>
+    <% @stitches.each do |stitch| %>
         <div class="thumbnail stitch_thumbnail">
-          <%= link_to "Stitch ##{request.stitch_id}", request_path(request.id) %>
+          <div><%= get_status(stitch[1]['rejected'], stitch[1]['video']['h264']['status']) %></div>
+
+          <%= link_to "#{stitch[1]['name']}", request_path(stitch[0]) %>
         </div>
     <% end %>
   </div>
 </div>
-
-
-<!--
-<% @stitches.each do |stitch| %>
-    <%= stitch %>
-    <br /><br />
-<% end %>
--->

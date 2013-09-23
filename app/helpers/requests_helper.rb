@@ -5,9 +5,9 @@ module RequestsHelper
     parsed = JSON(stitch)["stitch"]
 
     if parsed["video"].nil?
-      parsed["video"] = {}
-      parsed["video"]["h264"] = {}
-      parsed["video"]["h264"]["status"] = "processing"
+       parsed["video"] = {}
+       parsed["video"]["h264"] = {}
+       parsed["video"]["h264"]["status"] = "processing"
     end
 
     parsed
