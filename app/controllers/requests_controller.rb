@@ -3,7 +3,7 @@ class RequestsController < ApplicationController
 
   def index
     #@requests = Request.all
-    @requests = Request.order("created_at DESC")
+    @requests = Request.order("updated_at DESC")
     @stitches = Hash.new
 
     @requests.each do |request|
@@ -42,6 +42,14 @@ class RequestsController < ApplicationController
   end
 
   def update
+    @request = Request.find(params[:id])
+    if @request.update_attributes(stitch_id: remix_stitch(@request.stitch_id))
+      flash[:success] = "You've requested a REMIX of this Stitch! Coming right up..."
+
+      redirect_to request_path(@request.id)
+    else
+      redirect_to request_path(@request.id)
+    end
   end
 
   def destroy
@@ -60,7 +68,7 @@ class RequestsController < ApplicationController
           "stitch[notes]" => stitch[:notes]
         }
     )
-    res = Net::HTTP.start(url.host, url.port) {|http| http.request(req)}
+    res = Net::HTTP.start(url.host, url.port) { |http| http.request(req) }
     JSON(res.body)["stitch"]["id"]
   end
 
@@ -77,9 +85,33 @@ class RequestsController < ApplicationController
     parse_stitch(response.body)
   end
 
+  def remix_stitch(stitch_id)
+    # 1.) Fetch remote stitch,
+    # 2.) Update remote stitch status to "rejected",
+    # 3.) Request new stitch with duplicate params
+    # 4.) Return 'id' of new remote stitch for updating local request "stitch_id"
+    stitch = get_stitch(stitch_id)
+
+    url = URI.parse(get_api_url + "/#{stitch_id}.json")
+    req = Net::HTTP::Put.new(url.path)
+    req.set_form_data(
+        {
+            "api_key" => get_api_key,
+            "stitch[rejected]" => "1"
+        }
+    )
+    res = Net::HTTP.start(url.host, url.port) { |http| http.request(req) }
+
+    new_stitch = { name: stitch['name'], notes: stitch['notes'], description: stitch['description'] }
+    request_stitch(new_stitch)
+  end
+
   def get_api_key
     # stitchdoug
     #'27BiwVie8kRCH1BwNwprkg'
+
+    # stitchdoug (localhost)
+    # '3LCWrhOtSgpYqoaaVZPt2A'
 
     # stitchdustin
     #'ymTaxlSSTRvKGqNZ-ZHf8A'

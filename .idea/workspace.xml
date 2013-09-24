@@ -4,18 +4,18 @@
     <list default="true" id="af31447a-a5e2-4e90-82ba-28c0baa68830" name="Default" comment="" />
     <ignored path="stitch_request.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/requests_controller.rb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379959076428" ignored="false" />
+    <file path="/requests_controller.rb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1380063076106" ignored="false" />
     <file path="/routes.rb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379627392425" ignored="false" />
     <file path="/application.html.erb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379626051292" ignored="false" />
     <file path="/_header.html.erb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379627422481" ignored="false" />
     <file path="/_footer.html.erb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379627350873" ignored="false" />
-    <file path="/custom.css.scss" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379958609314" ignored="false" />
+    <file path="/custom.css.scss" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1380060791482" ignored="false" />
     <file path="/new.html.erb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379957688163" ignored="false" />
     <file path="/request.rb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379629963548" ignored="false" />
     <file path="/application_controller.rb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379635318783" ignored="false" />
     <file path="/requests_helper.rb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379957400762" ignored="false" />
     <file path="/fragment.rb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379955316280" ignored="false" />
-    <file path="/show.html.erb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379953940100" ignored="false" />
+    <file path="/show.html.erb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1380063512527" ignored="false" />
     <file path="/index.html.erb" changelist="af31447a-a5e2-4e90-82ba-28c0baa68830" time="1379958800796" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,12 +58,12 @@
         <option value="$PROJECT_DIR$/app/models/request.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/requests/show.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/requests_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/requests/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/requests/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/requests/show.html.erb" />
       </list>
     </option>
   </component>
@@ -107,6 +107,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,17 +258,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Rails.Development: stitch_request">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -565,7 +565,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19848976" sideWeight="0.6008065" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26968718" sideWeight="0.6008065" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2793959" sideWeight="0.6008065" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39919356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -640,7 +640,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -698,25 +698,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="88" selection-end="88" vertical-scroll-proportion="0.110091746">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/requests/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="39" selection-end="39" vertical-scroll-proportion="0.02757353">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/requests/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="139" selection-end="240" vertical-scroll-proportion="0.2757353">
-          <folding />
-        </state>
+        <state line="1" column="21" selection-start="39" selection-end="39" vertical-scroll-proportion="0.02757353" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/requests_helper.rb">
@@ -726,16 +710,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/requests/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="21" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.44852942">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="33" selection-start="351" selection-end="351" vertical-scroll-proportion="0.39612675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="311" column="12" selection-start="4236" selection-end="4236" vertical-scroll-proportion="0.1056338">
+        <state line="230" column="18" selection-start="3277" selection-end="3277" vertical-scroll-proportion="0.02640845">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/requests/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="81" selection-start="150" selection-end="150" vertical-scroll-proportion="0.084745765">
+        <state line="28" column="65" selection-start="987" selection-end="987" vertical-scroll-proportion="0.79096043">
           <folding />
         </state>
       </provider>

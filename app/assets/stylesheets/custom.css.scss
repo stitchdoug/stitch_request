@@ -227,6 +227,10 @@ input {
   @extend .error;
 }
 
+#remix_button {
+  min-width: 100%;
+}
+
 /* users */
 
 .users {

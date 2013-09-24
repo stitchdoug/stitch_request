@@ -15,9 +15,21 @@
   </section>
   <section>
     <span class="timestamp">
-    Requested <%= time_ago_in_words(@request.created_at) %> ago.
+    <% if @request.updated_at != @request.created_at %>
+      REMIXED <%= time_ago_in_words(@request.updated_at) %> ago.
+    <% else %>
+      Requested <%= time_ago_in_words(@request.created_at) %> ago.
+    <% end %>
   </span>
   </section>
+  <% if @stitch['video']['h264']['status'] == "success" %>
+      <section>
+        Don't like the result?
+        <%= form_for(@request) do |f| %>
+            <%= f.submit "REMIX", id: "remix_button", class: "btn btn-small btn-info" %>
+        <% end %>
+      </section>
+  <% end %>
 </aside>
 <div class="span8 offset1">
 
@@ -33,7 +45,7 @@
         </video>
 
     <% else %>
-        We are processing your request. Refresh in a short while to see your Stitch!
+        Refresh in a short while to see your Stitch... it's like MAGIC!
     <% end %>
   </div>
 
