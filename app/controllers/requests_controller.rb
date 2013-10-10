@@ -121,7 +121,7 @@ class RequestsController < ApplicationController
   end
 
   def get_api_url
-    api_url = 'http://evening-savannah-3101.herokuapp.com/stitches'
+    api_url = 'http://api.getstitch.co/stitches'
   end
 
 end
