@@ -9,20 +9,22 @@
     <%= form_for @request do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
 
-        <label for="stitch_name">Name</label>
-        <input id="stitch_name" type="text" name="stitch[name]" placeholder="Project name">
+        <label for="stitch_name">Occassion</label>
+        <input id="stitch_name" type="text" name="stitch[name]" placeholder="What's the occassion?">
 
         <label for="stitch_description">Description</label>
         <div class="field">
-          <textarea id="stitch_description" name="stitch[description]" rows="4" cols="25" placeholder="Summary of the idea"></textarea>
+          <textarea id="stitch_description" name="stitch[description]" rows="4" cols="25" placeholder="Should we be funny?"></textarea>
         </div>
 
+        <!--
         <label for="stitch_notes">Notes</label>
         <div class="field">
           <textarea id="stitch_notes" name="stitch[notes]" rows="4" cols="25" placeholder="For internal use"></textarea>
         </div>
+        -->
 
-        <%= f.submit "SEND", class: "btn btn-large btn-primary" %>
+        <%= f.submit "SUBMIT", class: "btn btn-large btn-primary" %>
     <% end %>
   </div>
 </div>
