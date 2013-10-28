@@ -117,7 +117,10 @@ class RequestsController < ApplicationController
     #'ymTaxlSSTRvKGqNZ-ZHf8A'
 
     # mindjet
-    'LqoHKveoOUAraMj-KeCF2g'
+    #'LqoHKveoOUAraMj-KeCF2g'
+
+    #hallmark
+    'L_s-CwNq-jTgGBjnM6mRpQ'
   end
 
   def get_api_url
