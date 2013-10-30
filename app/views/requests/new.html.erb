@@ -9,12 +9,12 @@
     <%= form_for @request do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
 
-        <label for="stitch_name">Occassion</label>
+        <label for="stitch_name"><strong>Occassion</strong></label>
         <input id="stitch_name" type="text" name="stitch[name]" placeholder="What's the occassion?">
 
-        <label for="stitch_description">Description</label>
+        <label for="stitch_description"><strong>Make it personal</strong></label>
         <div class="field">
-          <textarea id="stitch_description" name="stitch[description]" rows="4" cols="25" placeholder="Should we be funny?"></textarea>
+          <textarea id="stitch_description" name="stitch[description]" rows="4" cols="25" placeholder="Share a special or funny memory, quote or any other details that will help us make your card unique."></textarea>
         </div>
 
         <!--
