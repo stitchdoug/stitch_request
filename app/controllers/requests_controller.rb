@@ -121,6 +121,8 @@ class RequestsController < ApplicationController
 
     #hallmark
     'L_s-CwNq-jTgGBjnM6mRpQ'
+
+    #temp
   end
 
   def get_api_url
